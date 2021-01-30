@@ -1,0 +1,12 @@
+# what the data looks like when inputted from the balance to notepad using winwedge
+26.3563.4123.3123.3458.2989.3
+
+# What the data should look like
+26.3, 563.4, 123.3, 123.3, 458.2, 989.3
+# Each data point is a value that is to the tenths place
+# My goal is to be able to export the data to python or matlab so that I can do some stuff with it
+# 	but as you can see there is no commas seperating the data point so MATLABs and pythons normal 
+#       text readers can't deciper it. 
+#       You are the best andrew and don't spend much time on this you got bigger fish to fry.
+#       -<3, 
+#	    James Taylor

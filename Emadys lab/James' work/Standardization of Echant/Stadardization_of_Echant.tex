@@ -1,0 +1,111 @@
+\documentclass{article}
+%--------------------Packages 
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{tocloft} % dots in table of content
+\usepackage{amsmath} % math stuff
+\usepackage[latin1]{inputenc}
+% Create a title page
+\usepackage{titling}
+\usepackage[toc,page]{appendix} % appendix stuff
+\usepackage{caption}
+\captionsetup[table]{justification=centering,labelfont=it}
+%--------------------
+% Syntax-highlighted listings
+\usepackage{minted}
+\usepackage{siunitx}
+%--------------------Fancy header stuff
+\pagestyle{fancy}
+\rhead{Hopper Group}
+\lhead{Standardization of Etchant}
+\newcommand{\settitle}{Standardization of Etchant}
+\newcommand{\setauthor}{James Taylor }
+%---------------------------------------------------%
+% add dots to table of conetent----------
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+% Set document data
+\setcounter{secnumdepth}{0}
+\title{\settitle}
+\author{\setauthor}
+\setlength{\parskip}{1em} 
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\thesubsection}{\alph{subsection}}
+\setlength{\parindent}{0 cm}
+%----------------------------------------------
+%--------Commonly Used Blocks of Code 
+% add code
+% \inputminted[linenos]{language}{filename.py}
+% add figure 
+\iffalse
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{fig file name.here}
+\caption{caption here} 
+\label{fig:new fig}
+\end{figure}
+\fi
+%--------------------
+\begin{document}
+
+	\begin{titlepage}
+	\maketitle
+	\tableofcontents
+	\thispagestyle{empty}
+	\end{titlepage}
+	
+\newpage
+%\section{Introduction}
+Insert Intro here.
+
+\section{Materials}
+\subsection{Chemicals}
+\begin{itemize}
+  \item NaOH pellets - Caution corrosive! 
+  \item Phenolphthalein indicator solution
+  \item Potassium hydrogen phthalate (KHP)
+  \item Distilled Water
+\end{itemize}
+\subsection{Equipment}
+\begin{itemize}
+  \item 50 ml Burette 
+  \item 1 L Plastic storage bottle 
+  \item 250 ml beaker
+  \item Ring stand
+  \item Burette clamp
+\end{itemize}
+\section{Procedure}
+\subsection{Titration}
+\begin{enumerate}
+  \item Make sodium hydroxide solution by measuring out calculated amount of sodium hydroxide pellets and dissolve the pellets in approximately 900 ml of distilled water. Mix thoroughly. 
+  \item Measure out correct amount of KHP on analytical balance, using the reference table below and record the mass. Dissolve in about 100 ml of distilled water in a 250 ml beaker. 
+  \item Add 2 to 3 drops of phenolphthalein  to KHP solution.
+  \item Prepare burrette by washing with water, then with a small amount of the etching solution that you will be standardizing.   
+  \item Add sodium hydroxide solution to burrette, making sure to record the the height of the sodium hydroxide in the burette. 
+  \item Add sodium hydroxide until a pink/purple color starts to appear, then  add sodium hydroxide more slowly. 
+  \item When the KHP solution stays a light pink or purplish color, the end point is reached. Record the final level of the sodium hydroxide solution.
+  \item Calculate the molar concentration(M) of the sodium hydroxide solution.
+  \item Run three trials and average the final. 
+\end{enumerate}
+\newpage
+\subsection{Material Calculations}
+The above titration procedure will be preformed using the following amounts calculated. These amounts can be changed and methods to do so to fit the present situation will be mentioned.
+\subsubsection{Sodium Hydroxide}
+The following amounts of distilled water and sodium hydroxide will be needed to make 1 M , 3 M and 6 M solutions of sodium hydroxide. 
+  \begin{enumerate}
+  \item For 0.25 M solution, 900 ml of distilled water and about 9 grams of sodium hydroxide. 
+  \item For 1 M solution, 900 ml of distilled water and about 36 grams of sodium hydroxide. 
+  
+  \item For 2 M solution, 900 ml of distilled water and about 72 grams of sodium hydroxide. 
+\end{enumerate}
+\subsubsection{KHP}
+
+The following amount of KHP should be weight out for the corresponding molar solution of sodium hydroxide 
+ \begin{enumerate}
+  \item For 0.25 M solution, weight out about 0.75 - 0.76 grams of KHP. The end point should be around 15 ml of solution 
+  \item For 1 M solution, weight out about 3 - 3.1 grams of KHP. The end point should be around 15 ml of solution 
+  \item For 2 M solution, weight out about 6 - 6.1 grams of KHP. The end point should be around 15 ml of solution. 
+\end{enumerate}
+\end{document}

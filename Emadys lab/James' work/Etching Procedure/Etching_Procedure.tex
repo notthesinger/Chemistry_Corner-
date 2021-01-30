@@ -1,0 +1,113 @@
+\documentclass{article}
+%--------------------Packages 
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{tocloft} % dots in table of content
+\usepackage{amsmath} % math stuff
+\usepackage[latin1]{inputenc}
+% Create a title page
+\usepackage{titling}
+\usepackage[toc,page]{appendix} % appendix stuff
+\usepackage{caption}
+\captionsetup[table]{justification=centering,labelfont=it}
+%--------------------
+% Syntax-highlighted listings
+\usepackage{minted}
+\usepackage{siunitx}
+%--------------------Fancy header stuff
+\pagestyle{fancy}
+\rhead{Hopper Group}
+\lhead{Etching Procedure}
+\newcommand{\settitle}{Etching Procedure}
+\newcommand{\setauthor}{James Taylor }
+%---------------------------------------------------%
+% add dots to table of conetent----------
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+% Set document data
+\setcounter{secnumdepth}{0}
+\title{\settitle}
+\author{\setauthor}
+\setlength{\parskip}{1em} 
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\thesubsection}{\alph{subsection}}
+\setlength{\parindent}{0 cm}
+%----------------------------------------------
+%--------Commonly Used Blocks of Code 
+% add code
+% \inputminted[linenos]{language}{filename.py}
+% add figure 
+\iffalse
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{fig file name.here}
+\caption{caption here} 
+\label{fig:new fig}
+\end{figure}
+\fi
+%--------------------
+\begin{document}
+
+	\begin{titlepage}
+	\maketitle
+	\tableofcontents
+	\thispagestyle{empty}
+	\end{titlepage}
+	
+\newpage
+\section{Introduction}
+The purpose of this document is to show the step by step etching procedure of glass silica beads with NaOH etching solutions. The glass spheres will be of the sizes of 0.6mm, 2mm, and 4mm and the NaOH solution will be of 0.25 molar, 1 molar, and 2 molar. The glass spheres will be treated with the etching solution in a beaker and then set on an automatic swirlier at an appropriate RPM. This is to prevent resistance in the mass transfer from the surface of the spheres to the etching solution.  
+
+Time, solution concentration and size of particle will be the parameters that will be varied to see the affect that NaOH as an enchant has on the discharge of glass Beads in a hopper.
+
+\section{Materials}
+\subsection{Chemicals}
+\begin{itemize}
+\item Etching solution (NaOH solution)
+\item Ethanol 95 \%
+\item Anti static solution
+\end{itemize}
+
+\subsection{Equipment} 
+\begin{itemize}
+\item 1 L beaker
+\item 250 mL graduated cylinder
+\item Stop watch
+\item Vortex Mixer
+\item Drying dish
+\item Strainer 
+\item Coffee filters
+\end{itemize}
+
+\newpage
+\section{Procedure}
+\begin{enumerate}
+
+
+\item Weigh out 600 grams of the desired bead size, record the weight.
+\item Place beaker with weighed out beads on the vortex mixer and secure in place.
+\item Add about 250 mL of etching solution to 1 L beaker. Note: \textit{For the 1 L beaker the etching solution should fill the beaker, including beads, to the 500 mL mark.} 
+\item Turn on mixer and set the RPM to 160 and start the stop watch.
+\item Once the desired time is reached, stop the vortex mixer and remove the beaker. 
+\item Decant the etching solution into a properly labeled waste container, and do one of the following depending on the particle size. 
+\begin{enumerate}
+  \item Particles of size 2 mm and greater: Place beads in an appropriately sized  kitchen strainer and wash thoroughly with distilled water, shake as much of the water out of the beads as possible. 
+  \item Particles less then 2 mm in size: Place a coffee filter in an appropriately sized kitchen strainer and wet with distilled, so that the coffee filter forms to the strainer. Wash beads thoroughly with distilled water, shake as much of the water out of the beads as possible.   
+\end{enumerate}
+\item Place beads into a drying dish and add Ethanol and anti static solution (just like for the untreated beads) and thoroughly mix the solution. Place out to dry in a fume hood. 
+\item Once dried, weigh the beads and record the loss in weight.
+\item \textbf{Keep a small sample of the beads for future AFM testing.} 
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\end{document}
